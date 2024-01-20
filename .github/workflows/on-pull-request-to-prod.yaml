@@ -29,7 +29,7 @@ concurrency: prod-enviroment
 jobs:
   terraform-plan:
     runs-on: ubuntu-latest
-    environment: PROD_ENVIRONMENT
+    # environment: PROD_ENVIRONMENT # environments are not part of github free tier for private repos
     env:
       TF_VAR_SUBSCRIPTION_ID: ${{ secrets.TF_VAR_SUBSCRIPTION_ID }}
       TF_VAR_CLIENT_ID: ${{ secrets.TF_VAR_CLIENT_ID }}
