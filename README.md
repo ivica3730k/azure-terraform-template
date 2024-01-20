@@ -13,13 +13,13 @@ In addition to the above, this template also includes a GitHub Actions workflow 
 ## Service Principal Setup
 
 1. Create a service principal in the Azure Dashboard and create a client secret for it. Make sure to save the secret as it will not be shown again.
-![Creating service principal](./service_principal.png)
+![Creating service principal](./readme_photos/service_principal.png)
 
 2. Assign the service principal to the subscription
-![Assigning service principal to subscription](./service_principal_subscription_assignment.png)
+![Assigning service principal to subscription](./readme_photos/service_principal_subscription_assignment.png)
 
 3. Assign the service principal to the Active Directory tenant
-![Assigning service principal to Active Directory tenant](./service_principal_ad_assignment.png)
+![Assigning service principal to Active Directory tenant](./readme_photos/service_principal_ad_assignment.png)
 
 ## Local development
 It is possible to run Terraform actions locally from your machine without pushing to GitHub and/or making pull requests. This is useful for testing and debugging. To do so, you need to have Terraform installed on your machine.
@@ -39,7 +39,7 @@ TF_VAR_ENVIRONMENT=prod
 
 This now allows you to run terraform commands locally.
 
-![Running terraform commands locally](image.png)
+![Running terraform commands locally](./readme_photos/image.png)
 
 ## Notes
 1. This is using last version of Terraform before their license change.
