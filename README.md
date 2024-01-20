@@ -36,6 +36,7 @@ TF_VAR_STATE_CONTAINER_NAME=terraform-state-icecloud-prod
 TF_VAR_ENVIRONMENT=prod
 
 ```
+For the convinience, the project includes a `local_setup.sh` file which reads the contents of the .env file into environment and initializes your terraform project locally. You can run it by executing `./local_setup.sh` in the root of the project.
 
 This now allows you to run terraform commands locally.
 
